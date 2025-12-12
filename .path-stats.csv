@@ -13,7 +13,9 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},PATCH,Patch,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},PUT,com.nokia.eda.security.v1alpha1.KeychainDeployment,keychain_deployment,true,false,true
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains,DELETE,com.nokia.eda.security.v1alpha1.KeychainList,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains,GET,com.nokia.eda.security.v1alpha1.KeychainList,keychain_list,true,true,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains,POST,com.nokia.eda.security.v1alpha1.Keychain,keychain,true,false,true
@@ -23,4 +25,6 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},PATCH,Patch,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},PUT,com.nokia.eda.security.v1alpha1.Keychain,keychain,true,false,true
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}/_topology,POST,K8STopologyRequest,,false,false,false
