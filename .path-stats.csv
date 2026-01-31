@@ -10,7 +10,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/_deleted,GET,com.nokia.eda.security.v1alpha1.KeychainDeployment_DeletedResources,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},DELETE,Status,keychain_deployment,true,false,true
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},GET,com.nokia.eda.security.v1alpha1.KeychainDeployment,keychain_deployment,true,true,true
-/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},PATCH,Patch,,false,false,false
+/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},PATCH,com.nokia.eda.security.v1alpha1.KeychainDeployment,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name},PUT,com.nokia.eda.security.v1alpha1.KeychainDeployment,keychain_deployment,true,false,true
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -22,7 +22,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/_deleted,GET,com.nokia.eda.security.v1alpha1.Keychain_DeletedResources,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},DELETE,Status,keychain,true,false,true
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},GET,com.nokia.eda.security.v1alpha1.Keychain,keychain,true,true,true
-/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},PATCH,Patch,,false,false,false
+/apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},PATCH,com.nokia.eda.security.v1alpha1.Keychain,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name},PUT,com.nokia.eda.security.v1alpha1.Keychain,keychain,true,false,true
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}/_targets,GET,IntentTargets,,false,false,false
