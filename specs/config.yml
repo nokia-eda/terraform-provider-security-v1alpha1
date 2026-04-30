@@ -1,0 +1,62 @@
+provider:
+  name: security
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/security.eda.nokia.com
+      method: GET
+
+  keychain:
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}
+      method: GET
+
+  keychain_deployment:
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}
+      method: GET
+
+  keychain_deployment_list:
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments
+      method: GET
+
+  keychain_list:
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1
+      method: GET
+
+resources:
+  keychain:
+    create:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains
+      method: POST
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}
+      method: GET
+    update:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}
+      method: PUT
+    delete:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychains/{name}
+      method: DELETE
+
+  keychain_deployment:
+    create:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments
+      method: POST
+    read:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}
+      method: GET
+    update:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}
+      method: PUT
+    delete:
+      path: /apps/security.eda.nokia.com/v1alpha1/namespaces/{namespace}/keychaindeployments/{name}
+      method: DELETE
